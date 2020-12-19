@@ -1,11 +1,14 @@
+import React from 'react';
 import './App.css';
-import Navbar from './component/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 
 'react-router-dom';
+import Navbar from './component/Navbar';
+
 import Home from './component/pages/Home';
 import Services from './component/pages/Services';
 import Products from './component/pages/Products';
 import SignUp from './component/pages/SignUp';
+import Footer from './component/pages/Footer';
 
 
 function App() {
@@ -18,7 +21,10 @@ function App() {
         <Route path='products' component={Products}/>
         <Route path='sign-up' component={SignUp}/>
       </Switch>
+      <Footer/>
     </Router>
+    
+
   );
 }
 
